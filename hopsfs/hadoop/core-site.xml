@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/home/heifeng.lwh/hopsfs/hadoop-3.2.0.0/tmp</value>
+        <description>A base for other temporary directories.</description>
+    </property>
+
+<!-- file system properties -->
+    <properties>
+        <name>dfs.namenodes.rpc-addresses</name>
+        <value>hdfs://11.160.43.130:9000, hdfs://11.160.43.141:9000, hdfs://11.160.43.144:9000, hdfs://11.160.43.146:9000, hdfs://11.160.43.148:9000, hdfs://11.160.43.160:9000, hdfs://11.160.43.163:9000, hdfs://11.160.43.167:9000, hdfs://11.160.43.170:9000, hdfs://11.160.43.171:9000, hdfs://11.160.43.172:9000, hdfs://11.160.43.174:9000, hdfs://11.160.43.66:9000, hdfs://11.160.43.77:9000, hdfs://11.160.43.81:9000, hdfs://11.160.43.82:9000, hdfs://11.160.43.83:9000, hdfs://11.160.43.84:9000, hdfs://11.160.43.85:9000, hdfs://11.160.43.86:9000, hdfs://11.160.43.87:9000, hdfs://11.160.43.90:9000, hdfs://11.160.43.92:9000, hdfs://11.160.43.94:9000, hdfs://11.160.43.95:9000, hdfs://11.160.43.96:9000, hdfs://11.160.43.98:9000, hdfs://11.160.43.100:9000, hdfs://11.160.43.101:9000, hdfs://11.160.43.102:9000, hdfs://11.160.43.103:9000, hdfs://11.160.43.105:9000</value>
+    </properties>
+
+    <property>
+        <name>fs.default.name</name>
+        <value>hdfs://11.160.43.141:9000</value>
+    </property>
+
+    <properties>
+        <name>dfs.namenode.selector-policy</name>
+        <value>RANDOM_STICKY</value>
+    </properties>
+
+</configuration>

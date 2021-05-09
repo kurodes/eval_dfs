@@ -139,6 +139,9 @@ setfattr -n ceph.dir.pin -v 1 lala/
 ```
 
 ### test with ior ( 2711ae5 ) mdtest
+- 编译 ior for cephfs
+  - checkout 2711ae5
+  - replace aiori-CEPHFS.c
 ```bash
 # libcephfs
 mpirun --mca btl ^openib --mca btl_tcp_if_include bond0 -hostfile /home/kuro/cephfs/nodes-clients -np 64 \
