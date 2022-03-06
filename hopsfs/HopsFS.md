@@ -147,6 +147,7 @@ mount /dev/ram1 /usr/local/mysql/data
 - 检查端口占用
     - `sudo lsof -Pi :50070 -sTCP:LISTEN -t`
 - 在数据库创建需要的 table
+    - `/hdfs namenode -dropAndCreateDB`
     - `hops-metadata-dal-impl-ndb/schema/create-tables.sh`
 - 设置配置信息
     - etc/hadoop/hadoop-env.sh
